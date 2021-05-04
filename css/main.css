@@ -1,0 +1,292 @@
+html {
+	font-size: 16px;
+	width: 100%;
+}
+
+body {
+	height: auto;
+	width:100%;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	/*max-width: 1200px;*/
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; 
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.31em;
+    padding: .625em 0em;
+}
+
+header {
+	height: auto;
+	width: 100%;
+	/*border-bottom: 3px solid #77a466;*/
+	margin: 0 auto;
+	padding: 0 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; 
+}
+
+header h1 {
+	/*float: left;*/
+	margin: 0;
+	padding: .5em 0;
+	width: 100%;
+	order: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; 
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	/*float: right;*/
+	padding: 2em 0;
+	border-top: .19em solid #77a466;	
+	order: 2;
+	flex: 3 0 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; 
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap; 
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .875em;
+	padding: 0 .625em;
+	/*display: inline;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 3em;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	/*clear: both;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	flex-basis: 100%;
+	width: 90%;
+	padding: .85em;
+}
+
+.main-image {
+	height: auto;
+	/*float: left;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-title {
+	height: auto;
+	/*float: left;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 1em 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.6em;
+}
+.section-one,
+.section-two,
+.section-three {
+	width: 90%;
+	height: auto;
+	/*float: left;*/
+	border-top: 1px solid #eee;
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	flex-flow: column wrap;
+	flex: 1 10 100%;
+}
+
+.section-one h3 {
+	padding: .625em 0;
+}
+
+
+.section-two h3,
+.section-three h3 {
+	padding: .625em 0;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: .625em 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.31em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	height: auto;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	/*clear: both;*/
+	width: 90%;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
+}
+/* ----------- Tablets larger than 768px wide ----------- */
+
+@media (min-width: 768px) {
+.container {
+		margin: 0 auto;
+	}
+.bottom-section {
+	margin: 0 auto;
+	/*clear: both;*/
+	display: flex;
+	border-top: 1px solid #eee;
+	justify-content: center;
+	align-items: center;
+	flex-flow: revert;
+	flex: 1 10 auto;
+	height: auto;
+	width: 100%;
+	}
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+	border-top: none;
+	padding: .625em;
+	/*float: left;*/
+	}	
+.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		}
+}
+
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+
+@media (min-width: 1200px) {
+ .container {
+	 max-width: 1200px;
+	 margin: 0 auto;
+ }
+ header nav {
+	/*float: right;*/
+	border-top: none;	
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-flow: row wrap; 
+	flex: 1 50%;
+  }
+  header { 
+	height: auto;
+	margin: 0 auto;	  
+  }
+  header h1 {
+	justify-content: flex-start;
+  }
+  header nav ul {
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+  }
+ .top-section {
+    margin: 0 auto;
+ }
+ .main-image img {
+	flex: 1 100%;
+	height: auto;
+  }
+}
